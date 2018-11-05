@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
     var userIsInTheMiddleOfTyping = false
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        brain.addUnaryOperation(named: "✅") { [weak weakSelf = self] in
+            weakSelf?.display.textColor = UIColor.green
+            return sqrt($0)
+        }
+    }
+    
     @IBAction func touchDigit(_ sender: UIButton) {
         let digit = sender.currentTitle!
         if userIsInTheMiddleOfTyping {

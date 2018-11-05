@@ -79,7 +79,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="68.5" height="69.5"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" title="π"/>
+                                                        <state key="normal" title="✅"/>
                                                         <connections>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GL0-xy-fbv"/>
                                                         </connections>
